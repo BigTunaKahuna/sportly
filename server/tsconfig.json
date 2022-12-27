@@ -1,5 +1,8 @@
 {
+  "extends": "fastify-tsconfig",
   "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
     "target": "es2017",
     "module": "commonjs",
     "esModuleInterop": true,
@@ -7,6 +10,8 @@
     "strict": true,
     "skipLibCheck": true,
     "rootDir": "./src",
-    "outDir": "./build",
-  }
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }
